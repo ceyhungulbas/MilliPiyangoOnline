@@ -1,6 +1,8 @@
 from collections import Counter
 import re
 import random
+import itertools
+import collections
 
 numbers = []
 jokernumber = []
@@ -109,28 +111,55 @@ for _7li in groupwith7:
         # print("Element:", element, "tekrar:",tekrar)
         #>>>Element: 3 tekrar: 3
 
+# print("__________________________________________")
+
+
+# print(tekrar_liste)
+#tekrar_liste = Counter(tekrar_liste)
+# print(tekrar_liste)
+
+
+
+
+# >>> c = collections.Counter({'a': 2, 'b': 1})
+# >>> i = random.randrange(sum(c.values()))
+# >>> next(itertools.islice(c.elements(), i, None))
+# 'a'
+
+
+c = collections.Counter(numbers_butcounter)
+#i = random.randrange(sum(c.values()))
+# print("\n", c, "\n\n", c.keys() , "\n\n" ,c.values(),"\n\n")
+# print(len(c.values()))
+# print(len(c.keys()))
+# print(type(c.values()))
+# print(type(c))
+
+# for e in c:
+#     print("Key:",e,"Value:",c[e])
+
+# print("__________________________________________")
+
+a=[]
+
+for e in c:
+    if c[e]>5:
+        # print("Key:",e,"Value:",c[e])
+        a.append(e)
+
+# print(a)
+
 print("__________________________________________")
 
-
-print(tekrar_liste)
-tekrar_liste = Counter(tekrar_liste)
-print(tekrar_liste)
+# key for key,value in c.items() if value == 12
 
 
+randomlist = random.sample(a, 6)
+randomlist.sort()
 
-
-
-# import random
-# #Generate 5 random numbers between 10 and 30
-# randomlist = random.sample(range(10, 30), 5)
-# print(randomlist)
+print("\nKuponunuz:", ', '.join(map(str,randomlist)))
 
 
 
-
-
-"""
--Bilgisayardan random kupon oluşturma
-"""
-print("\nYazılım öğrenseydin amcık")
-# input("Sonlandırın.")
+print("\nBol şans")
+input("\nSonlandırın.")

@@ -57,7 +57,6 @@ for count, value in enumerate(groupwith6, start=1):
 
 print("~~~~~~~~~~~~~~~~~~~~~~~~~~")
 
-
 for _6li in groupwith6:
     for element in _6li:
         tekrar = numbers_butcounter[element]
@@ -69,21 +68,4 @@ for _6li in groupwith6:
 
 
 
-
-
-
-
-# import random
-# #Generate 5 random numbers between 10 and 30
-# randomlist = random.sample(range(10, 30), 5)
-# print(randomlist)
-
-
-
-
-
-"""
--Bilgisayardan random kupon oluşturma
-"""
-print("\nYazılım öğrenseydin amcık")
-# input("Sonlandırın.")
+input("\nSonlandırın.")

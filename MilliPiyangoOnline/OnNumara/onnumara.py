@@ -1,6 +1,8 @@
 from collections import Counter
 import re
 import random
+import itertools
+import collections
 
 numbers = []
 jokernumber = []
@@ -71,19 +73,31 @@ for _22li in groupwith22:
 
 
 
-
-
-# import random
-# #Generate 5 random numbers between 10 and 30
-# randomlist = random.sample(range(10, 30), 5)
-# print(randomlist)
+c = collections.Counter(numbers_butcounter)
 
 
 
+print("__________________________________________")
+
+a=[]
+
+for e in c:
+    if c[e]>9:
+        # print("Key:",e,"Value:",c[e])
+        a.append(e)
+
+#print(a)
+
+print("__________________________________________")
 
 
-"""
--Bilgisayardan random kupon oluşturma
-"""
-print("\nYazılım öğrenseydin amcık")
-# input("Sonlandırın.")
+randomlist = random.sample(a, 10)
+randomlist.sort()
+
+
+print("\nKuponunuz:", ', '.join(map(str,randomlist)))
+
+
+
+print("\nBol şans")
+input("\nSonlandırın.")
